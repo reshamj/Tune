@@ -3,6 +3,7 @@ class Project extends Component{
   render(){
     if (this.props.data){
       console.log("ok true");
+      console.log(this.props.data)
       var user = this.props.data.map(function(user){
         return <div key={user.name}><h5>{user.name}</h5><ul>
         <li>{user.avatar}</li>
