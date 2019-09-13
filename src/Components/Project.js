@@ -1,3 +1,5 @@
+//This component fetches from user info from user.json and
+//loads as props into component
 import React, {Component} from 'react'
 class Project extends Component{
   render(){

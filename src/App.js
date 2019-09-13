@@ -1,3 +1,4 @@
+//React App
 import React, { Component } from 'react';
 import ReactGA from 'react-ga';
 import $ from 'jquery';
@@ -18,7 +19,7 @@ class App extends Component {
     ReactGA.pageview(window.location.pathname);
 
   }
-
+  //fetch data from user.json and load into App
   getUserData(){
     $.ajax({
       url:'/users.json',
@@ -35,6 +36,7 @@ class App extends Component {
     });
   }
 
+//fetch data from logs.json and load in App
   getLogsData(){
     $.ajax({
       url:'/logs.json',
@@ -60,7 +62,8 @@ class App extends Component {
     return (
       <div className="App">
         <Project data={this.state.UserData.users}/>
-        <ProcessLog data={this.state.logsData.transactions}/>
+        //uncomment below if needed entier logs.json into props
+        // <ProcessLog data={this.state.logsData.transactions}/>
       </div>
     );
   }

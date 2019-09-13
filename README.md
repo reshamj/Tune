@@ -1,30 +1,21 @@
-Required - Node js, npm, nodemon, MongoDB
+`Required - Node js, npm, nodemon, MongoDB`
 
-To Run:
+### To Build and Run:
 
 Frontend App
-npm init
-npm start
+`npm init`
+`npm start`
 
 
 Backend Server:
-nodemon server.js
+`nodemon server.js`
 (Can validate Api calls with Postman)
 
-Technologies and Packages used:
-----------------------------------
-Node js
-Nodemon
-React JS
-React-Dom,
-React-ga,
-React-scripts
-Express JS
-MongoDB
-Mongoose
-CORS
-jQuery
-Ajax
+### Technologies and Packages used:
+
+Node js | Nodemon |  React JS |  React-Dom | React-ga |  React-scripts | Express JS | MongoDB | Mongoose| CORS | jQuery |Ajax
+
+
 ----------------------------------
 Folder Structure
 ----------------------------------
