@@ -26,6 +26,7 @@ class App extends Component {
       cache: false,
       success: function(data){
         this.setState({UserData: data});
+        //console.log(this.state.UserData)
       }.bind(this),
       error: function(xhr, status, err){
         console.log(err);
@@ -41,6 +42,7 @@ class App extends Component {
       cache: false,
       success: function(data){
         this.setState({logsData: data});
+        console.log(this.state.logsData)
       }.bind(this),
       error: function(xhr, status, err){
         console.log(err);
@@ -58,7 +60,7 @@ class App extends Component {
     return (
       <div className="App">
         <Project data={this.state.UserData.users}/>
-        <ProcessLog data={this.state.logsData.processlog}/>
+        <ProcessLog data={this.state.logsData.transactions}/>
       </div>
     );
   }
